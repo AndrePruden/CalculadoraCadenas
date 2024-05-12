@@ -24,4 +24,10 @@ describe("Sumar digitos", () => {
   it("La cadena tambien puede separarse por guion", () => {
     expect(calcularSumaCadena("22,2-3-13")).toEqual(40);
   });
+
+  it("Numeros mayores a 1000 se ignoran", () => {
+    expect(calcularSumaCadena("10001,2-3-13")).toEqual(18);
+  });
+
+
 });
